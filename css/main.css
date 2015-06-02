@@ -1,9 +1,10 @@
+/*=========================================
+	Global
+=========================================*/
 *,
 *:before,
 *:after {
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: inherit;
 }
 
 html,
@@ -21,6 +22,7 @@ html {
 	font-weight: normal;
 	font-style: normal;
 	line-height: 1.4;
+	box-sizing: border-box;
 }
 
 h1,
@@ -59,10 +61,14 @@ a {
 	font-size: 1.625rem;
 }
 
-	.section-title h2 {
-		text-transform: none;
-	}
+.section-title h2 {
+	text-transform: none;
+}
 
+
+/*=========================================
+	Header
+=========================================*/
 .page__header {
 	max-width: 62.500rem;
 	margin: 0 auto;
@@ -70,114 +76,118 @@ a {
 	text-align: center;
 }
 
-	.page__header:before {
-		content: ' ';
-		display: table;
-	}
+.page__header:before {
+	content: ' ';
+	display: table;
+}
 
-	.page__header:after {
-		content: ' ';
-		display: table;
-		clear: both;
-	}
+.page__header:after {
+	content: ' ';
+	display: table;
+	clear: both;
+}
 
+.site__branding {
+	padding-left: 0.938rem;
+	padding-right: 0.938rem;
+}
+
+@media only screen and (min-width: 46.250em) {
 	.site__branding {
-		padding-left: 0.938rem;
-		padding-right: 0.938rem;
+		width: 50%;
+		float: left;
+		text-align: left;
 	}
+}
 
-	@media only screen and (min-width: 46.250em) {
-		.site__branding {
-			width: 50%;
-			float: left;
-			text-align: left;
-		}
-	}
+.site__branding img {
+	width: 5.625rem;
+}
 
-		.site__branding img {
-			width: 5.625rem;
-		}
+.page__title-area {
+	padding-left: 0.938rem;
+	padding-right: 0.938rem;
+}
 
+@media only screen and (min-width: 46.250em) {
 	.page__title-area {
-		padding-left: 0.938rem;
-		padding-right: 0.938rem;
+		width: 50%;
+		float: right;
+		text-align: right;
 	}
+}
 
-	@media only screen and (min-width: 46.250em) {
-		.page__title-area {
-			width: 50%;
-			float: right;
-			text-align: right;
-		}
-	}
+.page__title {
+	margin: 0;
+	font-size: 2.625rem;
+	font-weight: 300;
+	text-transform: uppercase;
+}
 
-		.page__title {
-			margin: 0;
-			font-size: 2.625rem;
-			font-weight: 300;
-			text-transform: uppercase;
-		}
+.page__subtitle {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: uppercase;
+}
 
-		.page__subtitle {
-			margin: 0;
-			font-size: 1rem;
-			font-weight: 300;
-			text-transform: uppercase;
-		}
 
+/*=========================================
+	Main
+=========================================*/
 .page__main {
 	max-width: 62.500rem;
 	margin: 0 auto;
 }
 
-	.page__main:before {
-		content: '';
-		display: block;
-		height: 3px;
-		margin-left: 0.938rem;
-		margin-right: 0.938rem;
-		background-color: #bcbbbb;
-	}
+.page__main:before {
+	content: '';
+	display: block;
+	height: 3px;
+	margin-left: 0.938rem;
+	margin-right: 0.938rem;
+	background-color: #bcbbbb;
+}
 
-	.page__featured-image {
-		padding: 1.875rem 0.938rem;
-	}
+.page__featured-image {
+	padding: 1.875rem 0.938rem;
+}
 
-	.portfolio:before {
-		content: ' ';
-		display: table;
-	}
+.portfolio:before {
+	content: ' ';
+	display: table;
+}
 
-	.portfolio:after {
-		content: ' ';
-		display: table;
-		clear: both;
-	}
+.portfolio:after {
+	content: ' ';
+	display: table;
+	clear: both;
+}
 
+.portfolio-item {
+	padding-left: 0.938rem;
+	padding-right: 0.938rem;
+	padding-bottom: 0.938rem;
+	text-align: center;
+}
+
+@media only screen and (min-width: 46.250em) {
 	.portfolio-item {
-		padding-left: 0.938rem;
-		padding-right: 0.938rem;
-		padding-bottom: 0.938rem;
-		text-align: center;
+		width: 33.333333333333336%;
+		float: left;
 	}
 
-	@media only screen and (min-width: 46.250em) {
-		.portfolio-item {
-			width: 33.333333333333336%;
-			float: left;
-		}
-
-		.portfolio-item:last-child {
-			float: right;
-		}
+	.portfolio-item:last-child {
+		float: right;
 	}
+}
 
-	.portfolio-item__title {
-		font-size: 1.625rem;
-		text-transform: uppercase;
-	}
+.portfolio-item__title {
+	font-size: 1.625rem;
+	text-transform: uppercase;
+}
 
-	.portfolio-item__link {
-		font-size: 0.875rem;
-		word-wrap: break-word;
-	}
+.portfolio-item__link {
+	font-size: 0.875rem;
+	word-wrap: break-word;
+}
